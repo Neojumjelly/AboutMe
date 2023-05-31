@@ -1,0 +1,50 @@
+body {      /*  font obtained from https://fonts.adobe.com/fonts/fot-tsukuaoldmin-pr6n#details-section+fot-tsukuaoldmin-pr6n-l */
+    font-family: fot-tsukuaoldmin-pr6n, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+  }
+  
+  div.container {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: 12rem auto 13rem;
+    grid-template-rows: 5rem auto 7rem;
+    grid-template-areas:
+      "head head head"
+      "panleft mainbody panright"
+      "foot foot foot";
+    border: 2px solid black;
+  }
+  
+  
+  div.header {
+    background: #de4d6a;             /* Mandy */
+    grid-area: head;                
+    padding: 1rem;
+    border: 2px solid black;
+  }
+  div.footer {
+    background: #de4d6a;              /* Mandy */
+    grid-area: foot;
+    padding: 1rem;
+    border: 1px solid black;
+  }
+  div.panel {                            
+    background: #ea8298;             /* 30% tint, Mandy */
+    padding: 1rem;
+    border: 1px solid black;
+  }
+  div.panel.left {                    
+    grid-area: panleft;
+  }
+  div.panel.right {
+    grid-area: panright;
+  }
+  div.mainbody {
+    grid-area: mainbody;
+    background: #f3b8c4;            /* 60% tint, Mandy */
+    padding: 1rem;
+    border: 1px solid black;
+  }
+
